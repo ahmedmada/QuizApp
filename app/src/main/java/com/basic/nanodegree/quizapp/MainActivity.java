@@ -58,12 +58,13 @@ public class MainActivity extends AppCompatActivity {
                 score = 0;
                 if (answer.getText().toString().trim().equals("xml"))
                     score++;
-                if (q1_ch1.isChecked() &&q1_ch4.isChecked())
+                if (q1_ch1.isChecked() &&q1_ch4.isChecked()&&!q1_ch3.isChecked() &&!q1_ch2.isChecked())
                     score++;
-                if (q2_ch2.isChecked() &&q2_ch3.isChecked())
+                if (q2_ch2.isChecked() &&q2_ch3.isChecked()&&!q2_ch1.isChecked() &&!q2_ch4.isChecked())
                     score++;
-                if (q3_ch1.isChecked() &&q3_ch4.isChecked())
+                if (q3_ch1.isChecked() &&q3_ch4.isChecked()&&!q3_ch2.isChecked() &&!q3_ch3.isChecked())
                     score++;
+
 
                 int checkedRadioButtonId = radioGroup.getCheckedRadioButtonId();
 
